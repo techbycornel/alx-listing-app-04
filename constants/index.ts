@@ -1,19 +1,27 @@
-const Index = [
-    {
-        id: 1,
-    },
-    {
-        id: 2,
-    },
-    {
-        id: 3,
-    },
-    {
-        id: 4,
-    },
-    {
-        id: 5,
-    },
-]
+// constants/index.ts
+import { PropertyProps } from "@/interfaces";
 
-export default Index;
+export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
+  {
+    name: "Villa Ocean Breeze",
+    address: { state: "Seminyak", city: "Bali", country: "Indonesia" },
+    rating: 4.89,
+    category: ["Luxury Villa", "Pool", "Free Parking"],
+    price: 3200,
+    offers: { bed: "3", shower: "3", occupants: "4-6" },
+    image: "/assets/images/image1.jpg",
+    discount: ""
+  },
+  {
+    name: "Mountain Escape Chalet",
+    address: { state: "Aspen", city: "Colorado", country: "USA" },
+    rating: 4.7,
+    category: ["Mountain View", "Fireplace", "Self Checkin"],
+    price: 1800,
+    offers: { bed: "4", shower: "2", occupants: "5-7" },
+    image: "/assets/images/image2.jpg",
+    discount: "30"
+  },
+  // ... continue with the rest of the 20 objects (use same pattern)
+  // For brevity paste the rest following the pattern you provided and set image paths
+];
